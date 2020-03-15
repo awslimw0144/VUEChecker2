@@ -1,0 +1,43 @@
+defaultTasks 'clean', 'run', 'aggregate'
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.1.12")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+apply from: "$rootDir/gradle/libraries.gradle"
+
+// JDK 8
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    // ========================================================
+    compile     libs.main.serenity.screenplay,
+                libs.main.serenity.screenplayWebdriver,
+                libs.logback
+
+    testCompile libs.test.serenity.core,
+                libs.test.serenity.junit,
+                libs.test.serenity.cucumber4,
+                libs.test.junit,
+                libs.test.assertj
+
+}
+
+task techprimers {
+    println "Hello World"
+}

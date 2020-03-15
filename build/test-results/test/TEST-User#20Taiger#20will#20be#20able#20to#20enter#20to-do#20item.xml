@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="User Taiger will be able to enter to-do item" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-03-15T05:39:11" hostname="LAPTOP-R9255QRM" time="0.226">
+  <properties/>
+  <testcase name="Send Key to Textbox" classname="User Taiger will be able to enter to-do item" time="0.226">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[Feature: User Taiger will be able to enter to-do item
+
+  @gherkin
+  Scenario: Send Key to Textbox                                   ?[90m# src/test/resources/feature/WriteATask.feature:4?[0m
+13:39:11.561 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Send Key to Textbox
+-------------------------------------------------------------------(user-taiger-will-be-able-to-enter-to-do-item;send-key-to-textbox)
+    ?[33mGiven ?[0m?[33m"User_Taiger" is on VUE_Home_Page?[0m                       ?[90m# null?[0m
+13:39:11.699 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+    ?[33mWhen ?[0m?[33m"User_Taiger" creates task?[0m                               ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mHits Enter Key?[0m                                            ?[90m# null?[0m
+    ?[33mThen ?[0m?[33m"User_Taiger" should see that the total count is 1?[0m       ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33m"User_Taiger" should see that there is only 1 item showed?[0m ?[90m# null?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
