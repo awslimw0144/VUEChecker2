@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="com.taiger.testsuite.testsuite001.SimpleRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-R9255QRM" time="0.0">
   <properties/>
-  <system-out><![CDATA[13:39:11.147 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+  <system-out><![CDATA[14:00:31.414 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -18,9 +18,8 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 
-13:39:11.162 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@684c5cd
-13:39:11.168 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: User Taiger will be able to enter to-do item
-13:39:11.748 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+14:00:31.437 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Create Task List
+14:00:32.078 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
           __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
  _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
 (_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
@@ -51,48 +50,14 @@ public void creates_task(String string, io.cucumber.datatable.DataTable dataTabl
     throw new cucumber.api.PendingException();
 }
 
-@When("Hits Enter Key")
-public void hits_Enter_Key() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new cucumber.api.PendingException();
-}
-
 @Then("{string} should see that the total count is {int}")
 public void should_see_that_the_total_count_is(String string, Integer int1) {
     // Write code here that turns the phrase above into concrete actions
     throw new cucumber.api.PendingException();
 }
 
-@Then("{string} should see that there is only {int} item showed")
-public void should_see_that_there_is_only_item_showed(String string, Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new cucumber.api.PendingException();
-}
-
-13:39:11.822 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
-13:39:12.032 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
-13:39:12.061 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@475ffdc0
-13:39:12.064 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome User Taiger will be able to enter to-do item:Send Key to Textbox
-13:39:12.065 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@475ffdc0: Generating report for test outcome: User Taiger will be able to enter to-do item:Send Key to Textbox
-13:39:12.093 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Send Key to Textbox to file C:\Users\angel\IdeaProjects\VUEChecker2\target\site\serenity\b4f636739d841090ba916b4922d7fe6253be8067fdc609d5869f64e49a93758c.json (using temp file C:\Users\angel\IdeaProjects\VUEChecker2\target\site\serenity\b4f636739d841090ba916b4922d7fe6253be8067fdc609d5869f64e49a93758c.json655d1a4b-def5-4013-b48a-b5865c746777)
-13:39:12.173 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome User Taiger will be able to enter to-do item:Send Key to Textbox done
-13:39:12.174 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
-13:39:12.174 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 113 ms
-13:39:12.174 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5e0473ff
-13:39:12.176 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome User Taiger will be able to enter to-do item:Send Key to Textbox
-13:39:12.176 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5e0473ff: Generating report for test outcome: User Taiger will be able to enter to-do item:Send Key to Textbox
-13:39:12.177 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR Send Key to Textbox in b4f636739d841090ba916b4922d7fe6253be8067fdc609d5869f64e49a93758c
-13:39:12.240 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[]
-13:39:12.257 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[]
-13:39:12.440 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR User Taiger will be able to enter to-do item:Send Key to Textbox in b4f636739d841090ba916b4922d7fe6253be8067fdc609d5869f64e49a93758c.html in directory target\site\serenity  
-13:39:13.377 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in b4f636739d841090ba916b4922d7fe6253be8067fdc609d5869f64e49a93758c.html
-13:39:13.951 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[]
-13:39:14.002 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report b4f636739d841090ba916b4922d7fe6253be8067fdc609d5869f64e49a93758c.html in 625 ms
-13:39:14.002 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome User Taiger will be able to enter to-do item:Send Key to Textbox done
-13:39:14.002 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
-13:39:14.003 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 1828 ms
 ]]></system-out>
-  <system-err><![CDATA[Mar 15, 2020 1:39:11 PM cucumber.runtime.java.ObjectFactoryLoader loadSingleObjectFactory
+  <system-err><![CDATA[Mar 21, 2020 2:00:31 PM cucumber.runtime.java.ObjectFactoryLoader loadSingleObjectFactory
 WARNING: Loading deprecated ObjectFactory from runtime via reflection: cucumber.runtime.SerenityObjectFactory
 ]]></system-err>
 </testsuite>

@@ -37,7 +37,3 @@ dependencies {
                 libs.test.assertj
 
 }
-
-task techprimers {
-    println "Hello World"
-}
