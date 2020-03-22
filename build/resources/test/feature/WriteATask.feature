@@ -4,6 +4,4 @@ Feature: Create Task List
   Scenario: Send Key to Textbox
     Given "User_Taiger" is on VUE_Home_Page
     When "User_Taiger" creates task
-      |Task                         |
-      |I need to wake up at 6.30am  |
     Then "User_Taiger" should see that the total count is 1
