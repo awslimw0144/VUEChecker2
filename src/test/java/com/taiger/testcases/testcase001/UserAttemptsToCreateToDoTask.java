@@ -1,10 +1,15 @@
 package com.taiger.testcases.testcase001;
 
+import com.taiger.testpackage.steps.CreateToDoItems;
 import com.taiger.testpackage.steps.NavigateToVUEWeb;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
+
+import java.util.List;
+import java.util.Map;
 
 // Using lean-page objects and action classes
 public class UserAttemptsToCreateToDoTask {
@@ -13,19 +18,20 @@ public class UserAttemptsToCreateToDoTask {
     @Steps
     NavigateToVUEWeb navigateToVUEWeb;
 
-//    @Steps
-//    CreateTask createTask;
+    @Steps
+    CreateToDoItems createToDoItems;
 
 
     @Given("{string} is on VUE_Home_Page")
-    public void is_on_VUE_Home_Page(String actor) {
-        navigateToVUEWeb.HomePage();
+    public void is_on_VUE_Home_Page(String sUserName) {
+        navigateToVUEWeb.HomePage(sUserName);
     }
 
-    @When("{string} creates task")
-    public void creates_task(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        System.out.println(string);
+    @When("{string} attempts to write task item")
+    public void attemptsToWriteTaskItem(String userName, DataTable dataTable) {
+        List<Map<String,String>> lists = dataTable.asMaps();
+        String sTaskItem = lists.get(0).get("Task Description");
+        createToDoItems.withThisTask(sTaskItem);
     }
 
     @Then("{string} should see that the total count is {int}")
