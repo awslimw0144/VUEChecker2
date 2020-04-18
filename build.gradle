@@ -38,6 +38,20 @@ dependencies {
 
 }
 
+task checkForPreRequisite {
+    group "Check For PreRequisite"
+    description "Ensures these tasks are built first before performing test"
+    doLast{
+        println "This is my custom task"
+    }
+}
+
+clean{
+    doLast {
+        println 'Perform Cleaning!'
+    }
+}
+
 test {
     testLogging.showStandardStreams = true
     systemProperties System.getProperties()
