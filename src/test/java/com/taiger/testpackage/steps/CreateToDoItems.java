@@ -11,7 +11,7 @@ public class CreateToDoItems {
     VUEHomePage vueHomePage;
 
     @Step("User writes down to-do items")
-    public void withThisTask(List<Map<String,String>> lToDoLists) {
+    public void onToDoTextBox(List<Map<String,String>> lToDoLists) {
         for(Map<String,String> mToDo : lToDoLists){
             String strTask = mToDo.get("To do List");
             vueHomePage.writeToDoTextBox(strTask);

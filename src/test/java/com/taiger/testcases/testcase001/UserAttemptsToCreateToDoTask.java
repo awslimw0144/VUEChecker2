@@ -29,7 +29,7 @@ public class UserAttemptsToCreateToDoTask {
     @When("{string} attempts to write task item")
     public void attemptsToWriteTaskItem(String userName, DataTable dataTable) {
         List<Map<String,String>> lists = dataTable.asMaps();
-        createToDoItems.withThisTask(lists);
+        createToDoItems.onToDoTextBox(lists);
     }
 
     @Then("{string} should see that the total count is {int}")
