@@ -21,7 +21,6 @@ public class UserAttemptsToCreateToDoTask {
     @Steps
     CreateToDoItems createToDoItems;
 
-
     @Given("{string} is on VUE_Home_Page")
     public void is_on_VUE_Home_Page(String sUserName) {
         navigateToVUEWeb.HomePage(sUserName);
@@ -30,12 +29,11 @@ public class UserAttemptsToCreateToDoTask {
     @When("{string} attempts to write task item")
     public void attemptsToWriteTaskItem(String userName, DataTable dataTable) {
         List<Map<String,String>> lists = dataTable.asMaps();
-        String sTaskItem = lists.get(0).get("Task Description");
-        createToDoItems.withThisTask(sTaskItem);
+        createToDoItems.withThisTask(lists);
     }
 
     @Then("{string} should see that the total count is {int}")
     public void should_see_that_the_total_count_is(String string, Integer int1) {
-        // Write code here that turns the phrase above into concrete actions
+
     }
 }

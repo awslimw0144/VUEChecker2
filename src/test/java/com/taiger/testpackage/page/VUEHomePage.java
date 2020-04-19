@@ -11,7 +11,7 @@ public class VUEHomePage extends PageObject {
     @FindBy(className = "new-todo")
     private WebElement eSearchBox;
 
-    public void writeDownToDoItem(String sToDoItem){
+    public void writeToDoTextBox(String sToDoItem){
         eSearchBox.sendKeys(sToDoItem);
     }
 
