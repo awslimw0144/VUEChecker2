@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Manages To-Do Items</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Manages To-Do Items</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Manages To-Do Items</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">50.666s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">83%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="User adds items"></a>
+<h3 class="failures">User adds items</h3>
+<span class="code">
+<pre>java.lang.AssertionError: The strings matches
+Expected: a string containing &quot;7.30pm: Play Game&quot;
+     but: was &quot;7.00pm : Feed Cat; 7.30pm: Play Catch&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at com.taiger.testcases.testcase001.UserAttemptsToCreateToDoTask.heShouldBeSeeThatTheListsExists(UserAttemptsToCreateToDoTask.java:48)
+	at ✽.he should be see that the lists &quot;7.00pm : Feed Cat; 7.30pm: Play Catch&quot; exists(file:src/test/resources/feature/WriteATask.feature:12)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">User adds items</td>
+<td class="success">11.316s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">User adds items</td>
+<td class="failures">7.685s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">User deletes item that is completed</td>
+<td class="success">7.937s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User deletes item that is completed</td>
+<td class="success">7.978s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User deletes item that is uncompleted</td>
+<td class="success">7.960s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User deletes item that is uncompleted</td>
+<td class="success">7.790s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Feature: Manages To-Do Items
+
+  @Gherkin @AddingItem
+  Scenario Outline: User adds items ?[90m# src/test/resources/feature/WriteATask.feature:9?[0m
+    ?[36mGiven &quot;John&quot; is on the home page?[0m
+    ?[36mWhen &quot;John&quot; attempts to add his &quot;&lt;LIST OF TO DO ITEMS&gt;&quot;?[0m
+    ?[36mThen he should be see that the lists &quot;&lt;CHECKING LIST OF TO DO ITEMS&gt;&quot; exists?[0m
+
+    Examples: 
+
+  Background:  ?[90m# src/test/resources/feature/WriteATask.feature:3?[0m
+  In order to remember the things John want to do
+  As a todoMVC user
+  John want to manage his todo list
+00:36:08.342 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: User adds items
+-------------------------------------------------------------------(manages-to-do-items;user-adds-items)
+
+  @Gherkin @AddingItem
+  Scenario Outline: User adds items                                                    ?[90m# src/test/resources/feature/WriteATask.feature:17?[0m
+00:36:09.392 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+00:36:09.392 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+    ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                   ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
+    ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to add his ?[0m?[32m?[1m&quot;7.00am : Wake up; 7.30am : Breakfast&quot;?[0m             ?[90m# UserAttemptsToCreateToDoTask.attemptsToAddHis(String,String)?[0m
+    ?[32mThen ?[0m?[32mhe should be see that the lists ?[0m?[32m?[1m&quot;7.00am : Wake up; 7.30am : Breakfast&quot;?[0m?[32m exists?[0m ?[90m# UserAttemptsToCreateToDoTask.heShouldBeSeeThatTheListsExists(String)?[0m
+
+  Background:  ?[90m# src/test/resources/feature/WriteATask.feature:3?[0m
+  In order to remember the things John want to do
+  As a todoMVC user
+  John want to manage his todo list
+
+  @Gherkin @AddingItem
+  Scenario Outline: User adds items                                                     ?[90m# src/test/resources/feature/WriteATask.feature:18?[0m
+00:36:20.589 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+00:36:20.589 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+    ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                    ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
+    ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to add his ?[0m?[32m?[1m&quot;7.00pm : Feed Cat; 7.30pm: Play Game&quot;?[0m              ?[90m# UserAttemptsToCreateToDoTask.attemptsToAddHis(String,String)?[0m
+    ?[31mThen ?[0m?[31mhe should be see that the lists ?[0m?[31m?[1m&quot;7.00pm : Feed Cat; 7.30pm: Play Catch&quot;?[0m?[31m exists?[0m ?[90m# UserAttemptsToCreateToDoTask.heShouldBeSeeThatTheListsExists(String)?[0m
+      ?[31mjava.lang.AssertionError: The strings matches
+Expected: a string containing &quot;7.30pm: Play Game&quot;
+     but: was &quot;7.00pm : Feed Cat; 7.30pm: Play Catch&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at com.taiger.testcases.testcase001.UserAttemptsToCreateToDoTask.heShouldBeSeeThatTheListsExists(UserAttemptsToCreateToDoTask.java:48)
+	at ?.he should be see that the lists &quot;7.00pm : Feed Cat; 7.30pm: Play Catch&quot; exists(file:src/test/resources/feature/WriteATask.feature:12)
+?[0m
+
+  @Gherkin @RemovingItem @UncompletedTask
+  Scenario Outline: User deletes item that is uncompleted ?[90m# src/test/resources/feature/WriteATask.feature:21?[0m
+    ?[36mGiven &quot;John&quot; is on the home page?[0m
+    ?[36mAnd &quot;John&quot; has added his &quot;&lt;LIST OF TO DO ITEMS&gt;&quot;?[0m
+    ?[36mWhen &quot;John&quot; attempts to delete his uncompleted task &quot;&lt;ITEMS TO DELETE&gt;&quot;?[0m
+    ?[36mThen he should be see that the lists &quot;&lt;LIST OF TO DO ITEMS&gt;&quot; does not have &quot;&lt;ITEMS TO DELETE&gt;&quot;?[0m
+
+    Examples: 
+
+  Background:  ?[90m# src/test/resources/feature/WriteATask.feature:3?[0m
+  In order to remember the things John want to do
+  As a todoMVC user
+  John want to manage his todo list
+00:36:28.770 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: User deletes item that is uncompleted
+-------------------------------------------------------------------(manages-to-do-items;user-deletes-item-that-is-uncompleted)
+
+  @Gherkin @RemovingItem @UncompletedTask
+  Scenario Outline: User deletes item that is uncompleted                                                        ?[90m# src/test/resources/feature/WriteATask.feature:28?[0m
+00:36:29.039 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+00:36:29.039 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+    ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                                             ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
+    ?[32mAnd ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m has added his ?[0m?[32m?[1m&quot;7.00am : Wake up; 7.30am : Breakfast&quot;?[0m                                              ?[90m# UserAttemptsToCreateToDoTask.hasAddedHis(String,String)?[0m
+    ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to delete his uncompleted task ?[0m?[32m?[1m&quot;7.00am : Wake up&quot;?[0m                                       ?[90m# UserAttemptsToCreateToDoTask.attemptsToDeleteHis(String,String)?[0m
+    ?[32mThen ?[0m?[32mhe should be see that the lists ?[0m?[32m?[1m&quot;7.00am : Wake up; 7.30am : Breakfast&quot;?[0m?[32m does not have ?[0m?[32m?[1m&quot;7.00am : Wake up&quot;?[0m ?[90m# UserAttemptsToCreateToDoTask.heShouldBeSeeThatTheListsDoesNotHave(String,String)?[0m
+
+  Background:  ?[90m# src/test/resources/feature/WriteATask.feature:3?[0m
+  In order to remember the things John want to do
+  As a todoMVC user
+  John want to manage his todo list
+
+  @Gherkin @RemovingItem @UncompletedTask
+  Scenario Outline: User deletes item that is uncompleted                                                         ?[90m# src/test/resources/feature/WriteATask.feature:29?[0m
+00:36:37.654 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+00:36:37.654 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+    ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                                              ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
+    ?[32mAnd ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m has added his ?[0m?[32m?[1m&quot;7.00pm : Feed Cat; 7.30pm: Play Game&quot;?[0m                                               ?[90m# UserAttemptsToCreateToDoTask.hasAddedHis(String,String)?[0m
+    ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to delete his uncompleted task ?[0m?[32m?[1m&quot;7.30pm: Play Game&quot;?[0m                                       ?[90m# UserAttemptsToCreateToDoTask.attemptsToDeleteHis(String,String)?[0m
+    ?[32mThen ?[0m?[32mhe should be see that the lists ?[0m?[32m?[1m&quot;7.00pm : Feed Cat; 7.30pm: Play Game&quot;?[0m?[32m does not have ?[0m?[32m?[1m&quot;7.30pm: Play Game&quot;?[0m ?[90m# UserAttemptsToCreateToDoTask.heShouldBeSeeThatTheListsDoesNotHave(String,String)?[0m
+
+  @Gherkin @RemovingItem @CompletedTask
+  Scenario Outline: User deletes item that is completed ?[90m# src/test/resources/feature/WriteATask.feature:32?[0m
+    ?[36mGiven &quot;John&quot; is on the home page?[0m
+    ?[36mAnd &quot;John&quot; has added his &quot;&lt;LIST OF TO DO ITEMS&gt;&quot;?[0m
+    ?[36mWhen &quot;John&quot; attempts to delete his completed task &quot;&lt;ITEMS TO DELETE&gt;&quot;?[0m
+    ?[36mThen he should be see that the lists &quot;&lt;LIST OF TO DO ITEMS&gt;&quot; does not have &quot;&lt;ITEMS TO DELETE&gt;&quot;?[0m
+
+    Examples: 
+
+  Background:  ?[90m# src/test/resources/feature/WriteATask.feature:3?[0m
+  In order to remember the things John want to do
+  As a todoMVC user
+  John want to manage his todo list
+00:36:45.897 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: User deletes item that is completed
+-------------------------------------------------------------------(manages-to-do-items;user-deletes-item-that-is-completed)
+
+  @Gherkin @RemovingItem @CompletedTask
+  Scenario Outline: User deletes item that is completed                                                          ?[90m# src/test/resources/feature/WriteATask.feature:39?[0m
+00:36:46.176 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+00:36:46.177 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+    ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                                             ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
+    ?[32mAnd ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m has added his ?[0m?[32m?[1m&quot;7.00am : Wake up; 7.30am : Breakfast&quot;?[0m                                              ?[90m# UserAttemptsToCreateToDoTask.hasAddedHis(String,String)?[0m
+    ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to delete his completed task ?[0m?[32m?[1m&quot;7.00am : Wake up&quot;?[0m                                         ?[90m# UserAttemptsToCreateToDoTask.attemptsToDeleteHisCompletedTask(String,String)?[0m
+    ?[32mThen ?[0m?[32mhe should be see that the lists ?[0m?[32m?[1m&quot;7.00am : Wake up; 7.30am : Breakfast&quot;?[0m?[32m does not have ?[0m?[32m?[1m&quot;7.00am : Wake up&quot;?[0m ?[90m# UserAttemptsToCreateToDoTask.heShouldBeSeeThatTheListsDoesNotHave(String,String)?[0m
+
+  Background:  ?[90m# src/test/resources/feature/WriteATask.feature:3?[0m
+  In order to remember the things John want to do
+  As a todoMVC user
+  John want to manage his todo list
+
+  @Gherkin @RemovingItem @CompletedTask
+  Scenario Outline: User deletes item that is completed                                                           ?[90m# src/test/resources/feature/WriteATask.feature:40?[0m
+00:36:54.756 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+00:36:54.756 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+    ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                                              ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
+    ?[32mAnd ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m has added his ?[0m?[32m?[1m&quot;7.00pm : Feed Cat; 7.30pm: Play Game&quot;?[0m                                               ?[90m# UserAttemptsToCreateToDoTask.hasAddedHis(String,String)?[0m
+    ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to delete his completed task ?[0m?[32m?[1m&quot;7.30pm: Play Game&quot;?[0m                                         ?[90m# UserAttemptsToCreateToDoTask.attemptsToDeleteHisCompletedTask(String,String)?[0m
+    ?[32mThen ?[0m?[32mhe should be see that the lists ?[0m?[32m?[1m&quot;7.00pm : Feed Cat; 7.30pm: Play Game&quot;?[0m?[32m does not have ?[0m?[32m?[1m&quot;7.30pm: Play Game&quot;?[0m ?[90m# UserAttemptsToCreateToDoTask.heShouldBeSeeThatTheListsDoesNotHave(String,String)?[0m
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Sep 25, 2020 12:36:08 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 13265
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Sep 25, 2020 12:36:12 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 25, 2020 12:36:20 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 21962
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Sep 25, 2020 12:36:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 25, 2020 12:36:28 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 10971
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Sep 25, 2020 12:36:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 25, 2020 12:36:37 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 37630
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Sep 25, 2020 12:36:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 25, 2020 12:36:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 18491
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Sep 25, 2020 12:36:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 25, 2020 12:36:54 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 47086
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Sep 25, 2020 12:36:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at 25 Sep 2020, 12:37:04 am</p>
+</div>
+</div>
+</body>
+</html>
