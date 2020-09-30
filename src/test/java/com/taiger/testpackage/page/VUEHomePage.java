@@ -28,37 +28,28 @@ public class VUEHomePage extends PageObject {
     @FindBy(className = "clear-completed")
     WebElement eClearCompleted;
 
-
-    public void writeToDoTextBox(String sToDoItem){
-        eSearchBox.sendKeys(sToDoItem);
-        eSearchBox.sendKeys(Keys.ENTER);
+    public WebElement getFiltersOf(String sChoice){
+        return this.eFooter.findElement(By.xpath(".//a[text()='"+sChoice));
     }
 
-    public void deleteUnfinishedTask(String sToDelete){
-        WebElement item = eToDoList.findElement(By.xpath(".//label[text()='"+sToDelete+"']//preceding-sibling::input"));
-        WebElement destroy = eToDoList.findElement(By.xpath(".//label[text()='"+sToDelete+"']//following-sibling::button"));
-
-        String mouseOverScript = "if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj."
-                + "initEvent('mouseover', true, false); arguments[0].dispatchEvent(evObj);} "
-                + "else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
-        String onClickScript = "if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('click',"
-                + "true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject)"
-                + "{ arguments[0].fireEvent('onclick');}";
-        ((JavascriptExecutor) getDriver()).executeScript(mouseOverScript, item);
-        ((JavascriptExecutor) getDriver()).executeScript(onClickScript, destroy);
+    public WebElement getSearchBox(){
+        return this.eSearchBox;
     }
 
-    public void updateTaskWith(String oldTask, String newTask){
-        WebElement item = eToDoList.findElement(By.xpath(".//label[text()='"+oldTask+"']"));
-        String onDblClickScript = "if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('dblclick',"
-                + "true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject)"
-                + "{ arguments[0].fireEvent('ondblclick');}";
-        ((JavascriptExecutor) getDriver()).executeScript(onDblClickScript, item);
+    public WebElement getTaskOf(String sTask){
+        return eToDoList.findElement(By.xpath(".//label[text()='"+sTask+"']"));
     }
 
-    public void removeCompletedTask(String sToDelete) {
-        eToDoList.findElement(By.xpath(".//label[text()='"+sToDelete+"']//preceding-sibling::input")).click();
-        eClearCompleted.click();
+    public WebElement getCheckBoxOf(String sTask){
+        return eToDoList.findElement(By.xpath(".//label[text()='"+sTask+"']//preceding-sibling::input"));
+    }
+
+    public WebElement getClearCompleted(){
+        return this.eClearCompleted;
+    }
+
+    public WebElement getDestroyOf(String sTask){
+        return this.eToDoList.findElement(By.xpath(".//label[text()='"+sTask+"']//following-sibling::button"));
     }
 
     public List<String> getListOfTodos(){

@@ -1,7 +1,8 @@
 package com.taiger.testcases.testcase001;
 
+import com.taiger.testpackage.question.CheckFromVUECreatedList;
 import com.taiger.testpackage.question.VerifyListExists;
-import com.taiger.testpackage.steps.*;
+import com.taiger.testpackage.tasks.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -19,11 +20,9 @@ public class UserAttemptsToCreateToDoTask {
     @Steps
     NavigateToVUEWeb navigateToVUEWeb;
     @Steps
-    CreateToDoItems createToDoItems;
+    Tasks_CreateToDoItems tasksCreateToDoItems;
     @Steps
-    RemoveToDoItem removeToDoItem;
-    @Steps
-    UpdateToDoItem updateToDoItem;
+    Tasks_RemoveToDoItem actionsRemoveToDoItem;
 
     // Questions
     @Steps
@@ -39,24 +38,22 @@ public class UserAttemptsToCreateToDoTask {
 
     @When("{string} attempts to add his {string}")
     public void attemptsToAddHis(String sUserName, String listOfToDos) {
-        createToDoItems.withThis(listOfToDos);
+        tasksCreateToDoItems.withThis(listOfToDos);
     }
 
     @Then("he should be see that the lists {string} exists")
     public void heShouldBeSeeThatTheListsExists(String listOfToDos) {
-        for (String sToDo : verifyListExists.fromVUECreatedLists()) {
-            assertThat("The strings matches", listOfToDos, containsString(sToDo));
-        }
+        checkFromVUECreatedList.itemDoesExist(listOfToDos);
     }
 
     @And("{string} has added his {string}")
     public void hasAddedHis(String sUsername, String listOfToDos) {
-        createToDoItems.withThis(listOfToDos);
+        tasksCreateToDoItems.withThis(listOfToDos);
     }
 
     @When("{string} attempts to delete his uncompleted task {string}")
     public void attemptsToDeleteHis(String arg0, String itemToDelete) {
-        removeToDoItem.ofUncompletedTask(itemToDelete);
+        actionsRemoveToDoItem.ofUncompletedTask(itemToDelete);
     }
 
     @Then("he should be see that the lists {string} does not have {string}")
@@ -66,20 +63,6 @@ public class UserAttemptsToCreateToDoTask {
 
     @When("{string} attempts to delete his completed task {string}")
     public void attemptsToDeleteHisCompletedTask(String actor, String itemToDelete) {
-        removeToDoItem.ofThisCompletedTask(itemToDelete);
-    }
-
-    @Then("he should be see that the lists {string} have {string}")
-    public void heShouldBeSeeThatTheListsHave(String old, String itemToUpdate) {
-    }
-
-    @When("{string} attempts to update his {string} to {string}")
-    public void attemptsToUpdateHisTo(String actor, String oldTask, String newTask) {
-        updateToDoItem.ofThisTask(oldTask, newTask);
-    }
-
-    @And("he should be see that the lists {string} now have {string}")
-    public void heShouldBeSeeThatTheListsNowHave(String arg0, String newTask) {
-        checkFromVUECreatedList.itemDoesExist(newTask);
+        actionsRemoveToDoItem.ofThisCompletedTask(itemToDelete);
     }
 }
