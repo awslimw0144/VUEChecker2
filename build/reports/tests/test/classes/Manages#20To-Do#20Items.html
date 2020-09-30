@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">50.666s</div>
+<div class="counter">49.802s</div>
 <p>duration</p>
 </div>
 </td>
@@ -100,33 +100,33 @@ Expected: a string containing &quot;7.30pm: Play Game&quot;
 </tr>
 </thead>
 <tr>
-<td class="success">User adds items</td>
-<td class="success">11.316s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
 <td class="failures">User adds items</td>
-<td class="failures">7.685s</td>
+<td class="failures">7.397s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="success">User deletes item that is completed</td>
-<td class="success">7.937s</td>
+<td class="success">User adds items</td>
+<td class="success">11.194s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User deletes item that is completed</td>
-<td class="success">7.978s</td>
+<td class="success">7.720s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User deletes item that is completed</td>
+<td class="success">7.974s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User deletes item that is uncompleted</td>
-<td class="success">7.960s</td>
+<td class="success">7.761s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User deletes item that is uncompleted</td>
-<td class="success">7.790s</td>
+<td class="success">7.756s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -148,7 +148,7 @@ Expected: a string containing &quot;7.30pm: Play Game&quot;
   In order to remember the things John want to do
   As a todoMVC user
   John want to manage his todo list
-00:36:08.342 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+16:01:45.866 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -161,8 +161,8 @@ TEST STARTED: User adds items
 
   @Gherkin @AddingItem
   Scenario Outline: User adds items                                                    ?[90m# src/test/resources/feature/WriteATask.feature:17?[0m
-00:36:09.392 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
-00:36:09.392 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+16:01:46.984 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+16:01:46.984 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
     ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                   ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
     ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to add his ?[0m?[32m?[1m&quot;7.00am : Wake up; 7.30am : Breakfast&quot;?[0m             ?[90m# UserAttemptsToCreateToDoTask.attemptsToAddHis(String,String)?[0m
     ?[32mThen ?[0m?[32mhe should be see that the lists ?[0m?[32m?[1m&quot;7.00am : Wake up; 7.30am : Breakfast&quot;?[0m?[32m exists?[0m ?[90m# UserAttemptsToCreateToDoTask.heShouldBeSeeThatTheListsExists(String)?[0m
@@ -174,8 +174,8 @@ TEST STARTED: User adds items
 
   @Gherkin @AddingItem
   Scenario Outline: User adds items                                                     ?[90m# src/test/resources/feature/WriteATask.feature:18?[0m
-00:36:20.589 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
-00:36:20.589 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+16:01:58.003 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+16:01:58.003 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
     ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                    ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
     ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to add his ?[0m?[32m?[1m&quot;7.00pm : Feed Cat; 7.30pm: Play Game&quot;?[0m              ?[90m# UserAttemptsToCreateToDoTask.attemptsToAddHis(String,String)?[0m
     ?[31mThen ?[0m?[31mhe should be see that the lists ?[0m?[31m?[1m&quot;7.00pm : Feed Cat; 7.30pm: Play Catch&quot;?[0m?[31m exists?[0m ?[90m# UserAttemptsToCreateToDoTask.heShouldBeSeeThatTheListsExists(String)?[0m
@@ -200,7 +200,7 @@ Expected: a string containing &quot;7.30pm: Play Game&quot;
   In order to remember the things John want to do
   As a todoMVC user
   John want to manage his todo list
-00:36:28.770 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+16:02:05.882 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -213,8 +213,8 @@ TEST STARTED: User deletes item that is uncompleted
 
   @Gherkin @RemovingItem @UncompletedTask
   Scenario Outline: User deletes item that is uncompleted                                                        ?[90m# src/test/resources/feature/WriteATask.feature:28?[0m
-00:36:29.039 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
-00:36:29.039 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+16:02:06.186 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+16:02:06.186 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
     ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                                             ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
     ?[32mAnd ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m has added his ?[0m?[32m?[1m&quot;7.00am : Wake up; 7.30am : Breakfast&quot;?[0m                                              ?[90m# UserAttemptsToCreateToDoTask.hasAddedHis(String,String)?[0m
     ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to delete his uncompleted task ?[0m?[32m?[1m&quot;7.00am : Wake up&quot;?[0m                                       ?[90m# UserAttemptsToCreateToDoTask.attemptsToDeleteHis(String,String)?[0m
@@ -227,8 +227,8 @@ TEST STARTED: User deletes item that is uncompleted
 
   @Gherkin @RemovingItem @UncompletedTask
   Scenario Outline: User deletes item that is uncompleted                                                         ?[90m# src/test/resources/feature/WriteATask.feature:29?[0m
-00:36:37.654 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
-00:36:37.654 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+16:02:14.581 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+16:02:14.581 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
     ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                                              ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
     ?[32mAnd ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m has added his ?[0m?[32m?[1m&quot;7.00pm : Feed Cat; 7.30pm: Play Game&quot;?[0m                                               ?[90m# UserAttemptsToCreateToDoTask.hasAddedHis(String,String)?[0m
     ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to delete his uncompleted task ?[0m?[32m?[1m&quot;7.30pm: Play Game&quot;?[0m                                       ?[90m# UserAttemptsToCreateToDoTask.attemptsToDeleteHis(String,String)?[0m
@@ -247,7 +247,7 @@ TEST STARTED: User deletes item that is uncompleted
   In order to remember the things John want to do
   As a todoMVC user
   John want to manage his todo list
-00:36:45.897 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+16:02:22.748 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -260,8 +260,8 @@ TEST STARTED: User deletes item that is completed
 
   @Gherkin @RemovingItem @CompletedTask
   Scenario Outline: User deletes item that is completed                                                          ?[90m# src/test/resources/feature/WriteATask.feature:39?[0m
-00:36:46.176 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
-00:36:46.177 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+16:02:23.011 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+16:02:23.011 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
     ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                                             ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
     ?[32mAnd ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m has added his ?[0m?[32m?[1m&quot;7.00am : Wake up; 7.30am : Breakfast&quot;?[0m                                              ?[90m# UserAttemptsToCreateToDoTask.hasAddedHis(String,String)?[0m
     ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to delete his completed task ?[0m?[32m?[1m&quot;7.00am : Wake up&quot;?[0m                                         ?[90m# UserAttemptsToCreateToDoTask.attemptsToDeleteHisCompletedTask(String,String)?[0m
@@ -274,8 +274,8 @@ TEST STARTED: User deletes item that is completed
 
   @Gherkin @RemovingItem @CompletedTask
   Scenario Outline: User deletes item that is completed                                                           ?[90m# src/test/resources/feature/WriteATask.feature:40?[0m
-00:36:54.756 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
-00:36:54.756 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+16:02:31.409 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+16:02:31.410 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-ext  ensions-file..., --incognito, --disable-infobars, --disable-gpu, --headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
     ?[32mGiven ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m is on the home page?[0m                                                                              ?[90m# UserAttemptsToCreateToDoTask.isOnTheHomePage(String)?[0m
     ?[32mAnd ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m has added his ?[0m?[32m?[1m&quot;7.00pm : Feed Cat; 7.30pm: Play Game&quot;?[0m                                               ?[90m# UserAttemptsToCreateToDoTask.hasAddedHis(String,String)?[0m
     ?[32mWhen ?[0m?[32m?[0m?[32m?[1m&quot;John&quot;?[0m?[32m attempts to delete his completed task ?[0m?[32m?[1m&quot;7.30pm: Play Game&quot;?[0m                                         ?[90m# UserAttemptsToCreateToDoTask.attemptsToDeleteHisCompletedTask(String,String)?[0m
@@ -286,53 +286,53 @@ TEST STARTED: User deletes item that is completed
 <div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Sep 25, 2020 12:36:08 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+<pre>Sep 30, 2020 4:01:46 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 13265
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 6033
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 25, 2020 12:36:12 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 30, 2020 4:01:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Sep 25, 2020 12:36:20 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+Sep 30, 2020 4:01:57 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 21962
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 19259
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 25, 2020 12:36:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 30, 2020 4:02:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Sep 25, 2020 12:36:28 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+Sep 30, 2020 4:02:05 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 10971
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 31636
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 25, 2020 12:36:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 30, 2020 4:02:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Sep 25, 2020 12:36:37 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+Sep 30, 2020 4:02:14 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 37630
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 41496
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 25, 2020 12:36:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 30, 2020 4:02:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Sep 25, 2020 12:36:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+Sep 30, 2020 4:02:22 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 18491
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 4641
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 25, 2020 12:36:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 30, 2020 4:02:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Sep 25, 2020 12:36:54 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+Sep 30, 2020 4:02:31 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 47086
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 14186
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 25, 2020 12:36:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 30, 2020 4:02:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -345,7 +345,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.6.1</a> at 25 Sep 2020, 12:37:04 am</p>
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at 30 Sep 2020, 4:02:41 pm</p>
 </div>
 </div>
 </body>

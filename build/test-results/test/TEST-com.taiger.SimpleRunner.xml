@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="com.taiger.SimpleRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LIMW0144" time="0.0">
   <properties/>
-  <system-out><![CDATA[00:36:08.112 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+  <system-out><![CDATA[16:01:45.586 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -18,8 +18,8 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 
-00:36:08.123 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Manages To-Do Items
-00:36:20.304 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+16:01:45.597 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Manages To-Do Items
+16:01:57.710 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -29,7 +29,7 @@
 
 TEST PASSED: User adds items
 ----------------------------------------------------------------------------
-00:36:28.664 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
+16:02:05.801 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
  (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
@@ -39,9 +39,9 @@ TEST PASSED: User adds items
 
 TEST FAILED: User adds items
 --------------------------------------------------------------------------
-00:36:28.763 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then he should be see that the lists "7.00pm : Feed Cat; 7.30pm: Play Catch" exists
-00:36:28.763 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - The strings matchesExpected: a string containing "7.30pm: Play Game" but: was "7.00pm : Feed Cat; 7.30pm: Play Catch"
-00:36:37.403 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+16:02:05.874 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then he should be see that the lists "7.00pm : Feed Cat; 7.30pm: Play Catch" exists
+16:02:05.874 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - The strings matchesExpected: a string containing "7.30pm: Play Game" but: was "7.00pm : Feed Cat; 7.30pm: Play Catch"
+16:02:14.305 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -51,7 +51,7 @@ TEST FAILED: User adds items
 
 TEST PASSED: User deletes item that is uncompleted
 ----------------------------------------------------------------------------
-00:36:45.873 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+16:02:22.743 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -61,7 +61,7 @@ TEST PASSED: User deletes item that is uncompleted
 
 TEST PASSED: User deletes item that is uncompleted
 ----------------------------------------------------------------------------
-00:36:54.516 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+16:02:31.137 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -71,7 +71,7 @@ TEST PASSED: User deletes item that is uncompleted
 
 TEST PASSED: User deletes item that is completed
 ----------------------------------------------------------------------------
-00:37:03.125 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+16:02:39.781 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -82,7 +82,7 @@ TEST PASSED: User deletes item that is completed
 TEST PASSED: User deletes item that is completed
 ----------------------------------------------------------------------------
 ]]></system-out>
-  <system-err><![CDATA[Sep 25, 2020 12:36:08 AM cucumber.runtime.java.ObjectFactoryLoader loadSingleObjectFactory
+  <system-err><![CDATA[Sep 30, 2020 4:01:45 PM cucumber.runtime.java.ObjectFactoryLoader loadSingleObjectFactory
 WARNING: Loading deprecated ObjectFactory from runtime via reflection: cucumber.runtime.SerenityObjectFactory
 ]]></system-err>
 </testsuite>
